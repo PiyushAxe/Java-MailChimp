@@ -1,0 +1,25 @@
+
+apply plugin: 'java-library'
+apply plugin: 'war'
+
+
+repositories {
+   
+    jcenter()
+}
+
+dependencies {
+    
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    implementation 'com.google.guava:guava:23.0'
+	implementation 'org.jboss.resteasy:resteasy-jaxrs:3.0.13.Final'
+    implementation 'org.jboss.resteasy:resteasy-jaxb-provider:3.0.13.Final'
+    implementation 'org.jboss.resteasy:resteasy-jackson-provider:3.0.4.Final'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    
+  
+    testImplementation 'junit:junit:4.12'
+}
+
